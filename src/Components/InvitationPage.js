@@ -122,8 +122,8 @@ const InvitationPage = ({ onNavigate }) => {
                                 <div className="detail-item">
                                     <User className="detail-icon user-icon" />
                                     <div className="detail-content">
-                                        <h4>Người Tốt Nghiệp</h4>
-                                        <p>Đức</p>
+                                        <h4>Người Thoát Kiếp Nạn 4 Năm Đại Học</h4>
+                                        <p>Đức Trương</p>
                                     </div>
                                 </div>
                             </div>
@@ -132,17 +132,10 @@ const InvitationPage = ({ onNavigate }) => {
                         {/* Message card */}
                         <div className="message-card">
                             <p className="message-text">
-                                "Hành trình học tập đã kết thúc,
+                                "Các bạn đến tham dự là niềm hạnh phúc lớn nhất của Đức!!,
                                 <br />
-                                <span className="message-highlight">tương lai rộng mở đang chờ đợi!"</span>
+                                <span className="message-highlight">Hẹn gặp lại các bạn vào ngày hôm đó nhé"</span>
                             </p>
-                        </div>
-
-                        {/* Action button */}
-                        <div className="action-section">
-                            <button className="confirm-button">
-                                Xác Nhận Tham Dự
-                            </button>
                         </div>
                     </div>
                 </div>

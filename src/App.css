@@ -289,7 +289,8 @@ body {
   min-height: 100vh;
   background: linear-gradient(135deg, #312e81 0%, #7c2d92 50%, #ec4899 100%);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .invitation-background {
@@ -715,5 +716,89 @@ body {
   
   .floating-particles .particle:nth-child(n+11) {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .invitation-container {
+    padding: 0.5rem 0.25rem;
+    min-height: 100vh;
+    max-width: 100vw;
+  }
+  .invitation-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: stretch;
+  }
+  .avatar-section {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .avatar-frame {
+    width: 110px;
+    height: 110px;
+    border-radius: 1rem;
+  }
+  .avatar-placeholder img {
+    border-radius: 1rem;
+  }
+  .details-card,
+  .message-card {
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.7rem;
+  }
+  .details-title {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+  .details-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .details-list {
+    gap: 0.7rem;
+  }
+  .detail-item {
+    gap: 0.6rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .detail-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+  }
+  .detail-content h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.1rem;
+  }
+  .detail-content p {
+    font-size: 0.78rem;
+  }
+  .invitation-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+  .title-line {
+    width: 40px;
+    height: 2px;
+    margin-bottom: 0.5rem;
+  }
+  .back-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  .message-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .confirm-button {
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
+    width: 100%;
+    margin-top: 0.5rem;
   }
 }
