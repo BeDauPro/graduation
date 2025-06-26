@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import WelcomePage from './Components/WelcomePage';
+import InvitationPage from './Components/InvitationPage';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handlePageTransition = (pageNumber) => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentPage(pageNumber);
+      setIsTransitioning(false);
+    }, 300);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className={`page-container ${isTransitioning ? 'transitioning' : ''}`}>
+        {currentPage === 0 && (
+          <WelcomePage onNavigate={() => handlePageTransition(1)} />
+        )}
+        {currentPage === 1 && (
+          <InvitationPage onNavigate={() => handlePageTransition(0)} />
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
