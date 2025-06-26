@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/BeDauPro/graduation.git/static/css/main.06e1a8db.css",
+    "main.js": "/BeDauPro/graduation.git/static/js/main.0dc1192d.js",
+    "static/js/453.45e03c18.chunk.js": "/BeDauPro/graduation.git/static/js/453.45e03c18.chunk.js",
+    "static/media/avatar.jpg": "/BeDauPro/graduation.git/static/media/avatar.60ebb83dbb7a4d4a5dd3.jpg",
+    "index.html": "/BeDauPro/graduation.git/index.html",
+    "main.06e1a8db.css.map": "/BeDauPro/graduation.git/static/css/main.06e1a8db.css.map",
+    "main.0dc1192d.js.map": "/BeDauPro/graduation.git/static/js/main.0dc1192d.js.map",
+    "453.45e03c18.chunk.js.map": "/BeDauPro/graduation.git/static/js/453.45e03c18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06e1a8db.css",
+    "static/js/main.0dc1192d.js"
+  ]
+}
